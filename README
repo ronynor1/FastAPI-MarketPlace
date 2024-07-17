@@ -1,0 +1,30 @@
+# Introduction
+
+This project is a backend server that handles online marketplace functionalities
+
+## To run the main server
+
+- pip install -r requirements.txt
+- python3 main.py
+
+## DB Acces
+
+- You can go to the env file and change the MONGODB_URI and connect to you local db and test the solution
+
+## To run the stripe webhook server
+
+- install stripe
+  - install the stripe.deb from Github
+  - sudo dpkg -i stripe.deb
+  - to check if the installtion worked: stripe version
+- stripe listen --forward-to localhost:8000/webhook
+
+## To see all the APIs with interaction
+
+- access: http://localhost:8000/docs
+  - Here you can register and login
+  - After logging in, take the token and authorize the APIs
+
+## To run pytest
+
+- python3 -m pytest src/tests/test_hash.py
