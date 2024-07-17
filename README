@@ -2,6 +2,10 @@
 
 This project is a backend server that handles online marketplace functionalities
 
+## Before Starting
+
+- Fill the .env file
+
 ## To run the main server
 
 - pip install -r requirements.txt
